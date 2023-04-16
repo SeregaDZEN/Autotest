@@ -119,6 +119,17 @@ class TransferTest {
         assertEquals(-1, result)
 
     }
+    @Test
+    fun testCardVK() {
+        val type = "VK Pay"
+        val transfer = 16_000
+        val previous = 50_000
+
+        val result = commission(typeCard = type, sumTransfer = transfer, maxSumTransfer = previous)
+
+        assertEquals(333, result) // вот тут криво! для домашки!
+
+    }
 
 
 }
