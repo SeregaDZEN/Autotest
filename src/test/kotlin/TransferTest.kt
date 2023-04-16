@@ -127,7 +127,7 @@ class TransferTest {
 
         val result = commission(typeCard = type, sumTransfer = transfer, maxSumTransfer = previous)
 
-        assertEquals(333, result) // вот тут криво! для домашки!
+        assertEquals(-1, result) // вот тут криво! для домашки!
 
     }
 
